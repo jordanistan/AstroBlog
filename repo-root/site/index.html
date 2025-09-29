@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Astro Blog — M31 (2025-09-29)</title>
+    <style>
+      :root { color-scheme: dark light; }
+      body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 2rem; line-height: 1.6; background: #0b0f14; color: #e6edf3; }
+      main { max-width: 980px; margin: 0 auto; }
+      header h1 { margin: 0 0 0.25rem 0; font-size: 2rem; }
+      header p { margin: 0 0 1.5rem 0; color: #a9b1ba; }
+      footer { margin-top: 2rem; border-top: 1px solid #1f2937; padding-top: 1rem; color: #9aa4ae; font-size: 0.9rem; }
+      a { color: #7cc0ff; }
+
+      #slideshow {
+        background: #0f141b; 
+        border: 1px solid #1f2937; 
+        border-radius: 12px; 
+        overflow: hidden;
+        position: relative;
+      }
+      .slideshow-image-container {
+        position: relative;
+        background: #111;
+      }
+      .slideshow-image {
+        width: 100%; height: auto; display: block; opacity: 1; transition: opacity 0.3s ease-in-out;
+      }
+      #slideshow.loading .slideshow-image { opacity: 0.5; }
+      .slideshow-nav {
+        position: absolute; top: 50%; left: 1rem; right: 1rem; transform: translateY(-50%);
+        display: flex; justify-content: space-between; pointer-events: none;
+      }
+      .slideshow-nav button {
+        background: rgba(15, 20, 27, 0.6); backdrop-filter: blur(4px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        color: #fff; border-radius: 50%; width: 44px; height: 44px; cursor: pointer;
+        font-size: 1.5rem; pointer-events: all; transition: background 0.2s;
+      }
+      .slideshow-nav button:hover { background: rgba(31, 41, 55, 0.8); }
+      .slideshow-details { padding: 1rem 1.5rem 1.5rem; }
+      .slideshow-title { font-size: 1.5rem; margin: 0 0 0.25rem; }
+      .slideshow-description { margin: 0 0 1rem; color: #a9b1ba; }
+      .metadata-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; font-size: 0.9rem; }
+      .metadata-item strong { display: block; color: #9aa4ae; font-weight: 500; margin-bottom: 0.25rem; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>M31 — Andromeda Galaxy</h1>
+        <p>Session date: 2025‑09‑29 · Assets below are served from <code>site/assets/m31/</code></p>
+      </header>
+
+      <section id="slideshow">
+        <div class="slideshow-image-container">
+          <img src="" alt="Loading image..." class="slideshow-image" />
+          <div class="slideshow-nav">
+            <button id="prev-slide" aria-label="Previous image">‹</button>
+            <button id="next-slide" aria-label="Next image">›</button>
+          </div>
+        </div>
+        <div class="slideshow-details">
+          <h2 class="slideshow-title">Loading...</h2>
+          <p class="slideshow-description">Please wait.</p>
+          <div class="metadata-grid">
+            <div class="metadata-item"><strong>Integration:</strong> <span class="meta-integration"></span></div>
+            <div class="metadata-item"><strong>Sub-exposures:</strong> <span class="meta-subs"></span></div>
+            <div class="metadata-item"><strong>Gain/ISO:</strong> <span class="meta-gain"></span></div>
+            <div class="metadata-item"><strong>Bortle:</strong> <span class="meta-bortle"></span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="wiki-content">
+        <h3>About This Object (from Wikipedia)</h3>
+        <div class="wiki-summary">Loading...</div>
+        <a href="#" class="wiki-link" target="_blank" rel="noopener noreferrer">Read more on Wikipedia</a>
+      </section>
+
+      <footer>
+        <p>See observing log: <a href="../AstroLogs/2025-09-29-m31-dwarf2-78750.md">2025‑09‑29‑m31‑dwarf2‑78750.md</a></p>
+      </footer>
+    </main>
+
+    <script src="assets/main.js"></script>
+  </body>
+</html>

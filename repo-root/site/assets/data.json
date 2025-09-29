@@ -1,0 +1,28 @@
+[
+  {
+    "id": "m31-final-4h10m",
+    "title": "Final Integration",
+    "description": "Total integration time of 4 hours and 10 minutes.",
+    "imageUrl": "assets/m31/2025-09-29_m31_final_4h10m.jpg",
+    "acquisition": {
+      "integration": "4h 10m",
+      "subs": "<fill>",
+      "gain_iso": "<fill>",
+      "bortle": "<fill>"
+    },
+    "wikiPageTitle": "Andromeda_Galaxy"
+  },
+  {
+    "id": "m31-hdr-blend",
+    "title": "HDR Blend",
+    "description": "High Dynamic Range blend to reveal core and outer structures.",
+    "imageUrl": "assets/m31/2025-09-29_m31_HDRblend.jpg",
+    "acquisition": {
+      "integration": "<fill>",
+      "subs": "<fill>",
+      "gain_iso": "<fill>",
+      "bortle": "<fill>"
+    },
+    "wikiPageTitle": "Andromeda_Galaxy"
+  }
+]
